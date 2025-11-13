@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="actividad diagrama 1"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-12 09:35:45 p.&#160;m."/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xMjswOTozMToxOCBwLsKgbS47Mjk3NA=="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xMjswOTozNTo0NSBwLsKgbS47MTszMDg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado" type="Integer" array="False" size=""/>
+            <assign variable="dado" expression="random (6) + 1"/>
+            <output expression="&quot;el dado cayo en el numero: &quot; &amp; dado" newline="True"/>
+            <if expression="dado Mod 2 = 0">
+                <then>
+                    <output expression="&quot;el numero es PAR&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;el numero es IMPAR&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
