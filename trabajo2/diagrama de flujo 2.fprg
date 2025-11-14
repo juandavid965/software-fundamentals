@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagrama de flujo 2"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-13 08:11:14 p.&#160;m."/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xMzswNTo1Mzo1OSBwLsKgbS47Mjk4MA=="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xMzswODoxMToxNCBwLsKgbS47MTszMDc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, dado, suma" type="Integer" array="False" size=""/>
+            <output expression="&quot;&#191;cauntas veces quieres lanzar el dado?&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="suma" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="dado" expression="random (6) + 1"/>
+                <output expression="&quot;lanzamiento&quot; &amp; i &amp; &quot;:&quot; &amp; dado" newline="True"/>
+                <assign variable="suma" expression="suma + dado"/>
+            </for>
+            <output expression="&quot;la suma de los dados es :&quot; &amp; suma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
