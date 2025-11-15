@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tiros pares e impares 5"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-14 11:38:46 p.&#160;m."/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xNDsxMToxNDo0OSBwLsKgbS47Mjk3NA=="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xNDsxMTozODo0NiBwLsKgbS47MTszMDg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, dado" type="Integer" array="False" size=""/>
+            <declare name="pares, impares" type="Integer" array="False" size=""/>
+            <assign variable="pares" expression="0"/>
+            <assign variable="impares" expression="0"/>
+            <output expression="&quot;&#191;cuantos lanzamientos quieres realizar  ?&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="dado" expression="random (6) + 1"/>
+                <output expression="&quot;lanzamiento &quot; &amp; i &amp; &quot;:&quot; &amp; dado" newline="True"/>
+                <if expression="dado mod 2 = 0">
+                    <then>
+                        <assign variable="pares" expression="pares + 1"/>
+                    </then>
+                    <else>
+                        <assign variable="impares" expression="impares + 1"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </for>
+            <output expression="&quot;total de los tiros pares:&quot; &amp; pares" newline="True"/>
+            <output expression="&quot;total de los tiros impares :&quot; &amp; impares" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
