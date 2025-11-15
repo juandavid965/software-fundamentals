@@ -5,8 +5,8 @@ Algoritmo contar_pares_impares_parte5
 	pares <- 0
 	impares <-0
 	
-	Escribir "¿cuantos lanzamientos quieres realizar ?"
-	Leer n 
+	 Escribir "cuantos lanzamientos quieres realizar ?" 
+     Leer n 
 	
 	Para i <- 1 hasta n Con Paso 1 Hacer
 		dado <- Aleatorio(1,6)
