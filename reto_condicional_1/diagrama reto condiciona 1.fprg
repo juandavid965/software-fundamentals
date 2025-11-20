@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="diagrama reto condiciona 1"/>
+        <attribute name="authors" value="ACER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-19 06:54:45 p.&#160;m."/>
+        <attribute name="created" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xOTswNjoxNjoyNCBwLsKgbS47Mjk3OA=="/>
+        <attribute name="edited" value="QUNFUjtMQVBUT1AtTlBGTExFQ0Y7MjAyNS0xMS0xOTswNjo1NDo0NSBwLsKgbS47MTszMDkx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dado1, dado2" type="Integer" array="False" size=""/>
+            <assign variable="dado1" expression="random (6) + 1"/>
+            <assign variable="dado2" expression="random (6) + 1"/>
+            <output expression="&quot;dado1: &quot; &amp; dado1" newline="True"/>
+            <output expression="&quot;dado2: &quot; &amp; dado2" newline="True"/>
+            <if expression="dado1 % 2 == 0">
+                <then>
+                    <output expression="&quot;dado1:&quot; &amp; dado1 &amp; &quot;es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;dado1: &quot; &amp; dado1 &amp; &quot;es impar&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="dado2 % 2 == 0">
+                <then>
+                    <output expression="&quot;Dado 2: &quot; &amp; dado2 &amp; &quot; es par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Dado 2: &quot; &amp; dado2 &amp; &quot; es impar&quot;" newline="True"/>
+                </else>
+            </if>
+            <if expression="dado1 == dado2">
+                <then>
+                    <output expression="&quot;YOU WIN&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;GAME OVER&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
